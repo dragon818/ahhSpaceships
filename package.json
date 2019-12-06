@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dragon818/ahhSpaceships/issues"
   },
-  "homepage": "https://github.com/dragon818/ahhSpaceships#readme"
+  "homepage": "https://github.com/dragon818/ahhSpaceships#readme",
+  "devDependencies": {
+    "gulp-autoprefixer": "^7.0.1"
+  }
 }
