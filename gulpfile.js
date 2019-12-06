@@ -36,9 +36,17 @@ function copyhtml () {
   .pipe(dest('./dest/'))
 }
 
-
+function watcher () {
+  watch('./src/images/**/*', img)
+  watch('./src/index.html', copyhtml)
+  watch('./src/js/**/*.js', js)
+  watch('./src/css/**/*.css', style)
+}
 
 exports.style = style;
 exports.img = img;
 exports.js = js;
 exports.copyhtml = copyhtml;
+exports.watcher = watcher;
+
+exports.all = parallel(watcher, style,img, js, copyhtml);
