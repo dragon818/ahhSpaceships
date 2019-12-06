@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/dragon818/ahhSpaceships#readme",
   "devDependencies": {
-    "gulp-autoprefixer": "^7.0.1"
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.2.0"
   }
 }
