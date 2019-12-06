@@ -48,5 +48,4 @@ exports.img = img;
 exports.js = js;
 exports.copyhtml = copyhtml;
 exports.watcher = watcher;
-
-exports.all = parallel(watcher, style,img, js, copyhtml);
+exports.all = parallel(watcher, style, img, js, copyhtml);
