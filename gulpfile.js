@@ -3,6 +3,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleanCss = require('gulp-clean-css');
 const imgmin = require('gulp-imagemin');
 const babel = require('gulp-babel');
+const concat = require('gulp-concat');
 
 
 
@@ -24,6 +25,7 @@ function js () {
   .pipe(babel({
     presets: [['@babel/env',{modules: false}]]
   }))
+  .pipe(concat('main.js'))
   .pipe(dest('./dest/js'))
 }
 
