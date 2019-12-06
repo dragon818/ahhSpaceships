@@ -31,7 +31,14 @@ function js () {
   .pipe(dest('./dest/js'))
 }
 
+function copyhtml () {
+  return src('./src/index.html')
+  .pipe(dest('./dest/'))
+}
+
+
 
 exports.style = style;
 exports.img = img;
 exports.js = js;
+exports.copyhtml = copyhtml;
