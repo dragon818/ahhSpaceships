@@ -4,6 +4,7 @@ const cleanCss = require('gulp-clean-css');
 const imgmin = require('gulp-imagemin');
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
 
 
 
@@ -26,6 +27,7 @@ function js () {
     presets: [['@babel/env',{modules: false}]]
   }))
   .pipe(concat('main.js'))
+  .pipe(uglify())
   .pipe(dest('./dest/js'))
 }
 
